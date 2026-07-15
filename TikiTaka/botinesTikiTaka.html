@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botines</title>
+    <link rel="stylesheet" href="catalogoTikiTaka.css">
+    <link rel="stylesheet" href="InicioTikiTaka.css">
+</head>
+<body>
+    <header>
+        <img src="ImagenesHome/ImagenLogoRe.png" alt="Logo de la tienda" width="200" height="">
+        <h1>Tiki-Taka</h1>
+        <div class="head">
+            <a href="InicioTikiTaka.html" id="head-inicio"><strong>Inicio</strong></a>
+            <a href="" id="head-ayuda"><strong>Ayuda</strong></a>
+            <a href="" id="head-sesion"><strong>Iniciar Sesión</strong></a>
+        </div>
+     </header>
+     <main> <br><br>
+        <section class="ImgsCatalog1"> 
+            <div class="Img1">
+                <img src="ImagenesBotines/NikeMS7.jpg" alt="" width="450px">
+                <h3>Nike Mercurial Superfly 7</h3>
+                <p>Botas de futbol de perfil bajo MG</p>
+                <a href="BalonTrionda.html"><strong>Más Información ➜</strong></a>
+            </div>
+            <div class="Img1">
+                <img src="ImagenesBotines/AdidasF50.jpg" alt="" width="450px">
+                <h3>Adidas F50</h3>
+                <p>Botas de futbol de perfil bajo FG</p>
+                <a href="BalonTrionda.html"><strong>Más Información ➜</strong></a>
+            </div>
+            <div class="Img1">
+                <img src="ImagenesBotines/PumaUltra1.1.webp" alt="" width="450px">
+                <h3>Puma Ultra</h3>
+                <p>Botas de futbol de perfil bajo AG</p>
+                <a href="BalonTrionda.html"><strong>Más Información ➜</strong></a>
+            </div>
+            <div class="Img1">
+                <img src="ImagenesBotines/AdidasPredatorMoments.jpg" alt="" width="450px">
+                <h3>Adidas Predator Moments</h3>
+                <p>Botas de futbol de perfil bajo FG</p>
+                <a href="BalonTrionda.html"><strong>Más Información ➜</strong></a>
+            </div>
+            <div class="Img1">
+                <img src="ImagenesBotines/NikeVortex.jpg" alt="" width="450px">
+                <h3>Nike Vordex</h3>
+                <p>Botas de futbol de perfil bajo AG</p>
+                <a href="BalonTrionda.html"><strong>Más Información ➜</strong></a>
+            </div>
+            <div class="Img1">
+                <img src="ImagenesBotines/NikeShadow.jpg" alt="" width="450px">
+                <h3>Nike Shadow</h3>
+                <p>Botas de futbol de perfil bajo AG/TF</p>
+                <a href="BalonTrionda.html"><strong>Más Información ➜</strong></a>
+            </div>
+            <div class="Img1">
+                <img src="ImagenesBotines/NikeLegendKaka.jpg" alt="" width="450px">
+                <h3>Nike Predator Kaka</h3>
+                <p>Botas de futbol de perfil bajo FG</p>
+                <a href="BalonTrionda.html"><strong>Más Información ➜</strong></a>
+            </div>
+            <div class="Img1">
+                <img src="ImagenesBotines/AdidasWalesBonnerPredator.jpg" alt="" width="450px">
+                <h3>Adidas x Wales Bonner Predator</h3>
+                <p>Botas de futbol de perfil bajo AG/TF</p>
+                <a href="BalonTrionda.html"><strong>Más Información ➜</strong></a>
+            </div>
+            <div class="Img1">
+                <img src="ImagenesBotines/Adidas Bring Back 90s Nostalgia Predator.jpg" alt="" width="450px">
+                <h3>Adidas Bring Back 90s Nostalgia Predator</h3>
+                <p>Botas de futbol de perfil bajo AG</p>
+                <a href="BalonTrionda.html"><strong>Más Información ➜</strong></a>
+            </div>
+        </section>
+     </main>
+     <footer>
+        <div class="footer">
+                <div class="TikiTaka">
+                    <p id="TikiTaka">Tiki-Taka Company</p>
+                    <p id="fraseTikiTaka">Tu catálogo de merchandising de futbol de confianza</p><br>          
+                    <a id="instaTikiTaka" href="https://www.instagram.com/tikitakacompany/" target="_blank"><img src="ImagenesHome/Instagram-Logo.png" alt="Instagram" width="80px"></a>
+                    <a id="twitterTikiTaka" href="https://twitter.com/TikiTakaCo" target="_blank"><img src="ImagenesHome/X-Logo.png" alt="Twitter" width="80px"></a>
+                </div>
+
+                <div class="OpcPiePag">
+                    <div class="herramientas">
+                        <p id="Herramientas">Herramientas</p><br>
+                        <a href="" id="pie-mayoreo">Mayoreo</a><br>
+                        <a href="" id="pie-kids">Club Kids</a>
+                    </div>
+                    <div class="conocenos">
+                        <p id="Conocenos">Conócenos</p><br>
+                        <a href="" id="pie-blog">Blog</a><br>
+                        <a href="" id="pie-origen">Origen</a><br>
+                        <a href="" id="pie-valores">Valores</a>
+                    </div>
+                    <div class="soporte">
+                        <p id="Soporte">Soporte</p><br>
+                        <a href="" id="pie-contacto">Contacto</a><br>
+                        <a href="" id="pie-ayuda">Ayuda</a><br>
+                        <a href="" id="pie-legal">Legal</a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <button id="btnArriba" onclick="volverArriba()">
+     ↑
+    </button>
+    <script>
+
+     const boton = document.getElementById("btnArriba");
+
+     window.onscroll = function(){
+     if(document.documentElement.scrollTop > 300){
+        boton.style.display = "block";
+     }else{
+        boton.style.display = "none";
+     }
+     }
+     function volverArriba(){
+     window.scrollTo({
+        top:0,
+        behavior:"smooth"
+     });
+     }
+    </script>
+</body>
+</html>

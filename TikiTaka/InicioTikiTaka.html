@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiki-Taka Inicio</title>
+    <link rel="stylesheet" href="InicioTikiTaka.css">
+</head>
+ 
+<body>
+    <header>
+     <a href="InicioTikiTaka.html">
+         <img src="ImagenesHome/ImagenLogoRe.png" alt="Logo de la tienda" width="150" height="">
+     </a>
+     <h1>Tiki-Taka</h1>
+     <div class="head">
+         <a href="InicioTikiTaka.html" id="head-inicio"><strong>Inicio</strong></a>
+         <a href="" id="head-ayuda"><strong>Ayuda</strong></a>
+         <a href="Login y registro TikiTiki/EstLogin.html" id="head-sesion"><strong>Iniciar Sesión</strong></a>
+     </div>
+    </header>
+
+   <div class="Hero">
+     <div class="frase frase-superior">
+         UNA Vida
+     </div>
+     <div class="frase frase-izquierda">
+         UN Partido
+     </div>
+     <div class="ImagenInicial">
+         <img src="ImagenesHome/ImagenInicial.jpg" alt="Foto de inicio">
+     </div>
+     <div class="frase frase-derecha">
+         UN Resultado
+     </div>
+     <div class="frase frase-inferior">
+         UN Catálogo
+     </div>
+    </div>
+
+    <div class="FraseMotivacional2">
+         <p>El mejor y mayor catálogo sobre merchandising de futbol en El Salvador</p>
+    </div>
+    <br><br><br><br><br>
+
+    <section class="ImgsCatalog">
+        <div class="Img1">
+            <a href="camisasTikiTaka.html">
+                <img src="ImagenesHome/Camisas2.jpg" alt="Foto de Camisas" width="450px">
+            </a>
+            <h2>Camisetas</h2>
+            <p id="texto1">Que mejor manera de vivir apasionadamente el futbol que llevando la camiseta de tu club favorito</p>
+        </div>
+        <div class="Img1">
+            <a href="balonesTikiTaka.html">
+                <img src="ImagenesHome/Trionda_cover.jpg" alt="Foto de Balon" width="450px">
+            </a>
+            <h2>Balones</h2>
+            <p id="texto1">Todos los balones de las mejores competiciones solo para los mejores</p>
+        </div>
+        <div class="Img1">
+            <a href="botinesTikiTaka.html">
+                <img src="ImagenesHome/nike-showtime-pack (9).jpg" alt="Foto de Botas" width="450px">
+            </a>
+            <h2>Botines</h2>
+            <p id="texto1">Los mejores y mas usados botines, los mejores amigos de los balones</p>
+        </section>
+    </div><br><br><br><br><br><br>
+    <footer>
+        <div class="footer">
+                <div class="TikiTaka">
+                    <p id="TikiTaka">Tiki-Taka Company</p>
+                    <p id="fraseTikiTaka">Tu catálogo de merchandising de futbol de confianza</p><br>          
+                    <a id="instaTikiTaka" href="https://www.instagram.com/tikitakacompany/" target="_blank"><img src="ImagenesHome/Instagram-Logo.png" alt="Instagram" width="80px"></a>
+                    <a id="twitterTikiTaka" href="https://twitter.com/TikiTakaCo" target="_blank"><img src="ImagenesHome/X-Logo.png" alt="Twitter" width="80px"></a>
+                </div>
+
+                <div class="OpcPiePag">
+                    <div class="herramientas">
+                        <p id="Herramientas">Herramientas</p><br>
+                        <a href="" id="pie-mayoreo">Mayoreo</a><br>
+                        <a href="" id="pie-kids">Club Kids</a>
+                    </div>
+                    <div class="conocenos">
+                        <p id="Conocenos">Conócenos</p><br>
+                        <a href="" id="pie-blog">Blog</a><br>
+                        <a href="" id="pie-origen">Origen</a><br>
+                        <a href="" id="pie-valores">Valores</a>
+                    </div>
+                    <div class="soporte">
+                        <p id="Soporte">Soporte</p><br>
+                        <a href="" id="pie-contacto">Contacto</a><br>
+                        <a href="" id="pie-ayuda">Ayuda</a><br>
+                        <a href="" id="pie-legal">Legal</a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <button id="btnArriba" onclick="volverArriba()">
+     ↑
+    </button>
+    <script>
+
+     const boton = document.getElementById("btnArriba");
+
+     window.onscroll = function(){
+     if(document.documentElement.scrollTop > 300){
+        boton.style.display = "block";
+     }else{
+        boton.style.display = "none";
+     }
+     }
+     function volverArriba(){
+     window.scrollTo({
+        top:0,
+        behavior:"smooth"
+     });
+     }
+    </script>
+</body>
+</html>
