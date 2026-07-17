@@ -1,4 +1,49 @@
-header {
+/* Reseteo básico y tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Fondo oscuro exterior para simular el entorno de la imagen */
+body {
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/* El "lienzo" blanco de la aplicación */
+.app-screen {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 800px;
+    min-height: 100vh;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
     display: flex;
     align-items: center;
     background-color: #ffffff;
@@ -13,338 +58,174 @@ header {
     justify-content:center;
     gap:30px;
 }
-.head a{
-    transition: .3s;
+
+dav.a
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.85rem;
 }
 
-.head a:hover{
-    color: #1d72ff;
-}
-.head a:hover{
-    border-bottom: 3px solid #1d72ff;
-}
-h1{
-    font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 35px;
-}
-
-div.head{
-    font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-a#head-inicio{
-    color: black;
-    text-decoration: none;
-}
-a#head-ayuda{
-    color: black;
-    text-decoration: none;
-}
-a#head-sesion{
-    color: black;
-    text-decoration: none;
-}
-.ImagenInicial{
-    text-align: center;
-    padding: 20px;
-}
-img{
-    max-width:100%;
-    height:auto;
-    border-radius: 20px;
-}
-.Hero{
-    position: relative;
-    width: fit-content;
-    margin: 60px auto 140px auto;
-}
-.ImagenInicial img{
-    margin-top: 80px;
-    width: 1200px;
-    display: block;
-    border-radius: 40px;
-    box-shadow: 10px 10px 19px rgba(0,0,0,.25);
-}
-.frase{
-    position: absolute;
-    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
-    font-size: 55px;
+.nav-links a.active {
+    text-decoration: underline;
     font-weight: bold;
-    white-space: nowrap;
-    color: #111;
-    opacity: 0;
 }
-.frase-superior{
-    padding-top: 80px;
-    top: -90px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: aparecerArriba 1s forwards;
+a#nav-links-Inicio{
+    color: black;
+    text-decoration: none;
 }
-.frase-izquierda{
-    left: -270px;
-    top: 50%;
-    transform: translateY(-50%) rotate(-90deg);
-    animation: aparecerIzquierda 1.2s forwards;
+a#nav-links-ayuda{
+    color: black;
+    text-decoration: none;
 }
-.frase-derecha{
-    right: -290px;
-    top: 50%;
-    transform: translateY(-50%) rotate(90deg);
-    animation: aparecerDerecha 1.2s forwards;
-}
-.frase-inferior{
-    bottom: -90px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: aparecerAbajo 1s forwards;
+a#nav-links-sesion{
+    color: black;
+    text-decoration: none;
 }
 
-div.FraseMotivacional2{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    margin-top: 60px;
-    text-align: center;
+/* --- SECCIÓN ACERCA DE (Héroe) --- */
+.about-hero {
+    background-color: #f9fbf9; /* Gris/verde sutil de fondo */
+    padding: 40px;
 }
 
-.Img1 img{
-    transition: .3s;
-}
-.Img1{
-    transition: .3s;
+.about-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #000;
 }
 
-.Img1 img:hover{
-    transform: scale(1.05);
+.hero-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
-.Img1:hover{
-    transform: translateY(-8px);
+
+.hero-image-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
 }
-.ImgsCatalog{
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* --- SECCIÓN NUESTRO EQUIPO --- */
+.team-section {
+    padding: 50px 40px 20px 40px;
+}
+
+.team-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.section-desc {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Galería con CSS Grid */
+.image-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 75px;
-    justify-content: center;
+    gap: 20px;
 }
-div.Img1{
-    margin-right: 90px;
-    display:block;
-    border: 1px solid rgba(129, 129, 129, 0.397);
-    border-radius: 40px;
-    box-shadow: 0 0 30px rgba(12, 12, 12, 0.199);
-}
-div.Img1 h2{
-    font-family: Arial, Helvetica, sans-serif; 
-    font-size: 30px;
-    margin-left: 20px;
-}
-div.Img1 p#texto1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: left;
-    font-size: 22px;
-    width: 430px;
-    margin-left: 8px;
-}
-footer{
-    background-color: #cecece;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    margin-top: 50px;
-}
-div.footer{
-    display: flex;
-    align-items: center;
+
+.image-gallery img {
     width: 100%;
+    height: 180px;
+    object-fit: cover; /* Evita que las fotos se deformen */
+    border-radius: 12px;
 }
-div.TikiTaka{
-    margin-left: 90px;
-    margin-right: 90px;
+
+/* --- HISTORIAL / FILAS --- */
+.history-section {
+    padding: 20px 40px 40px 40px;
 }
-p#TikiTaka{
-    width: 300px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    text-align: center;
-}
-p#fraseTikiTaka{
-    width: 300px;
-    font-family: 'lucida sans', 'lucida sans regular', 'lucida grande', 'lucida sans unicode', geneva, verdana, sans-serif; 
-    font-size: 20px;
-    text-align: center;
-}
-a#instaTikiTaka{
-    margin-right: 50px;
-    font-size: 50px;                            
-}
-a#twitterTikiTaka{
-    margin-right: 20px;
-    font-size: 50px;
-}
-div.OpcPiePag{
+
+.history-row {
     display: flex;
-    margin-left: 90px;
-    margin-right: 90px;
-    width: 500px;
     justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
-div.herramientas{
-    display: flex;
-    flex-direction: column;
-    margin-left: 45%;
-}
-p#Herramientas{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
 
+.company-date {
+    color: #999;
+    font-size: 0.85rem;
+    font-weight: normal;
 }
-a#pie-mayoreo{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
+
+/* --- FOOTER --- */
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px;
+    border-top: 1px solid #eeeeee;
+}
+
+.footer-left h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.footer-left p {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.social-icons {
     
+    gap: 15px;
 }
-a#pie-kids{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-div.conocenos{
+
+.footer-links-container {
     display: flex;
-    flex-direction: column;
+    gap: 40px;
 }
-div.soporte{
-    display: flex;
-    flex-direction: column;
-}
-div.conocenos{
-    display: flex;
-    flex-direction: column;
-    margin-left: 45%;
-}
-p#Conocenos{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
 
+.footer-col h4 {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    color: #000;
 }
-a#pie-blog{
+
+.footer-col a {
+    display: block;
     text-decoration: none;
-    color: black;
-    font-size: 18px;
-    
-}
-a#pie-origen{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-a#pie-valores{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
+    color: #666;
+    font-size: 0.75rem;
+    margin-bottom: 8px;
 }
 
-div.soporte{
-    display: flex;
-    flex-direction: column;
-    margin-left: 45%;
-}
-p#Soporte{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
-
-}
-a#pie-contacto{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    
-}
-a#pie-ayuda{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-a#pie-legal{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-#btnArriba{
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-
-    width: 55px;
-    height: 55px;
-
-    border: none;
-    border-radius: 50%;
-
-    background-color: #1d72ff;
-    color: white;
-
-    font-size: 25px;
-    cursor: pointer;
-
-    display: none;
-
-    transition: all .3s ease;
-
-    box-shadow: 0px 4px 10px rgba(0,0,0,.3);
-
-    z-index: 999;
-}
-
-#btnArriba:hover{
-    background-color: #0b5ed7;
-    transform: scale(1.1);
-}
-@keyframes aparecerArriba{
-    from{
-        opacity:0;
-        transform:translate(-50%,-60px);
-    }
-    to{
-        opacity:1;
-        transform:translate(-50%,0);
-    }
-}
-@keyframes aparecerAbajo{
-    from{
-        opacity:0;
-        transform:translate(-50%,60px);
-    }
-    to{
-        opacity:1;
-        transform:translate(-50%,0);
-    }
-}
-@keyframes aparecerIzquierda{
-    from{
-        opacity:0;
-        transform:translate(-70px,-50%) rotate(-90deg);
-    }
-    to{
-        opacity:1;
-        transform:translate(0,-50%) rotate(-90deg);
-    }
-}
-@keyframes aparecerDerecha{
-    from{
-        opacity:0;
-        transform:translate(70px,-50%) rotate(90deg);
-    }
-    to{
-        opacity:1;
-        transform:translate(0,-50%) rotate(90deg);
-    }
+.footer-col a:hover {
+    text-decoration: underline;
 }
