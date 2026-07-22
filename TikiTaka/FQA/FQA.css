@@ -1,0 +1,270 @@
+/* Reset de estilos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header / Navegación */
+header {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1050px;
+  padding: 0 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 48px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: underline;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Hero Section (Banner superior) */
+.hero-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1050px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.hero-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Sección FAQ */
+.faq-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 1050px;
+  padding: 0 20px;
+  display: flex;
+  gap: 40px;
+}
+
+/* Columna Izquierda */
+.faq-left {
+  flex: 0 0 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-title {
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1.15;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.shirts-image-container {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.shirts-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Columna Derecha - Tarjetas */
+.faq-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-card {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+.faq-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.shape-icon {
+  font-size: 14px;
+  color: #7d848a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-card h2 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #111111;
+  line-height: 1.25;
+}
+
+.faq-card p {
+  font-size: 12px;
+  color: #666666;
+  line-height: 1.5;
+  padding-left: 24px;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1050px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left {
+  max-width: 280px;
+}
+
+.brand-name {
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: #111111;
+}
+
+.brand-desc {
+  font-size: 11px;
+  color: #888888;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons svg {
+  width: 18px;
+  height: 18px;
+  fill: #888888;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+
+.link-column h4 {
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: #111111;
+}
+
+.link-column ul {
+  list-style: none;
+}
+
+.link-column li {
+  margin-bottom: 8px;
+}
+
+.link-column a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #888888;
+  font-weight: 500;
+}
+
+.link-column a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 850px) {
+  .faq-container {
+    flex-direction: column;
+  }
+  .faq-left {
+    flex: none;
+    width: 100%;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-links {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
