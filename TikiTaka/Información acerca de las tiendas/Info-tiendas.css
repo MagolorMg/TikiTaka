@@ -1,0 +1,231 @@
+/* Reset de estilos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estructura general */
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+/* Header y Navegación */
+header {
+  width: 100%;
+  border-bottom: 1px dashed #7eb0eb;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: underline;
+  color: #333333;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Secciones separadas por líneas punteadas azules */
+.section-block {
+  width: 100%;
+  border-bottom: 1px dashed #7eb0eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Seccion Title */
+.title-section {
+  padding: 40px 20px;
+}
+
+.main-title {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.15;
+  color: #000000;
+}
+
+/* Seccion Mapa */
+.map-section {
+  padding: 30px 20px;
+}
+
+.map-container {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.map-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Seccion Informacion */
+.info-section {
+  padding: 50px 20px;
+  text-align: left;
+}
+
+.info-container {
+  width: 100%;
+  max-width: 700px;
+}
+
+.info-title {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #111111;
+}
+
+.info-text {
+  font-size: 12px;
+  color: #888888;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Seccion Call to Action */
+.cta-section {
+  padding: 60px 20px;
+}
+
+.cta-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #000000;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px dashed #7eb0eb;
+}
+
+.footer-left {
+  max-width: 300px;
+}
+
+.brand-name {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.brand-desc {
+  font-size: 11px;
+  color: #888888;
+  margin-bottom: 25px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  color: #888888;
+}
+
+.social-icons svg {
+  width: 18px;
+  height: 18px;
+  fill: #888888;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  gap: 50px;
+}
+
+.link-column h4 {
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #111111;
+}
+
+.link-column ul {
+  list-style: none;
+}
+
+.link-column li {
+  margin-bottom: 8px;
+}
+
+.link-column a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #888888;
+  font-weight: 500;
+}
+
+.link-column a:hover {
+  text-decoration: underline;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .main-title { font-size: 26px; }
+  .cta-title { font-size: 24px; }
+  footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-links {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
