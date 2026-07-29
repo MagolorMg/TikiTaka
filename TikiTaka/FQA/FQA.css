@@ -6,42 +6,43 @@
   font-family: 'Inter', sans-serif;
 }
 
-body {
-  background-color: #ffffff;
-  color: #111111;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 /* Header / Navegación */
 header {
     display: flex;
     align-items: center;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     border-radius: 8px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: white;
     box-shadow: 0 2px 10px rgba(0,0,0,.1);
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
     gap:30px;
 }
-
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1050px;
-  padding: 0 20px;
+.head a strong{
+    transition: .3s;
+}
+.head a :hover{
+    transition: .3s;
 }
 
-.nav-links {
-    font-size: 80px;
+.head a strong:hover{
+    color: rgb(34, 107, 0);
+}
+.head a:hover{
+    border-bottom: 3px solid rgb(34, 107, 0);
+}
+h1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 35px;
+}
+
+div.head{
+    font-size: 22px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: auto;
     display: flex;
@@ -49,47 +50,31 @@ header {
     justify-content: center;
     gap: 30px;
 }
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+a#head-inicio{
+    color: black;
+    text-decoration: none;
+}
+a#head-ayuda{
+    color: black;
+    text-decoration: none;
+}
+a#head-sesion{
+    color: black;
+    text-decoration: none;
 }
 
-.logo-img {
-  height: 48px;
-  object-fit: contain;
-}
-
-.logo-text {
-  font-size: 30px;
-  font-weight: 900;
-  letter-spacing: -1px;
-}
-
-nav {
-  display: flex;
-  gap: 30px;
-}
-
-nav a {
-  text-decoration: underline;
-  color: #111111;
-  font-size: 13px;
-  font-weight: 600;
-}
 
 /* Hero Section (Banner superior) */
 .hero-section {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .hero-container {
   width: 100%;
-  max-width: 1050px;
+  max-width: flex;
   height: 320px;
   overflow: hidden;
 }
@@ -111,7 +96,7 @@ nav a {
 
 .faq-container {
   width: 100%;
-  max-width: 1050px;
+  max-width: flex;
   padding: 0 20px;
   display: flex;
   gap: 40px;
@@ -133,13 +118,14 @@ nav a {
 }
 
 .shirts-image-container {
-  width: 100%;
-  border-radius: 4px;
+  width: flex;
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow:  0 10px rgba(12, 12, 12, 0.199);
 }
 
 .shirts-image-container img {
-  width: 100%;
+  width: flex;
   height: auto;
   display: block;
   object-fit: cover;
@@ -200,7 +186,7 @@ footer {
 
 .footer-container {
   width: 100%;
-  max-width: 1050px;
+  max-width: flex;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
@@ -212,14 +198,14 @@ footer {
 }
 
 .brand-name {
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 800;
   margin-bottom: 6px;
   color: #111111;
 }
 
 .brand-desc {
-  font-size: 11px;
+  font-size: 20px;
   color: #888888;
   margin-bottom: 20px;
   line-height: 1.4;
@@ -231,8 +217,8 @@ footer {
 }
 
 .social-icons svg {
-  width: 18px;
-  height: 18px;
+  width: 25px;
+  height: 25px;
   fill: #888888;
   cursor: pointer;
 }
@@ -243,7 +229,7 @@ footer {
 }
 
 .link-column h4 {
-  font-size: 12px;
+  font-size: 25px;
   font-weight: 800;
   margin-bottom: 14px;
   color: #111111;
@@ -259,7 +245,7 @@ footer {
 
 .link-column a {
   text-decoration: none;
-  font-size: 11px;
+  font-size: 20px;
   color: #888888;
   font-weight: 500;
 }
