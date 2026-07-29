@@ -121,7 +121,7 @@ a#head-sesion{
   width: flex;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow:  0 10px rgba(12, 12, 12, 0.199);
+  box-shadow: 0 10px rgba(12, 12, 12, 0.199);
 }
 
 .shirts-image-container img {
